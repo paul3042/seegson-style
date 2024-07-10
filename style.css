@@ -1,0 +1,331 @@
+/*Universal rules*/
+
+@font-face {
+    font-family: seegson;
+    src: url(./Fonts/VT323-Regular/VT323-Regular.ttf);
+}
+
+html, body {
+  margin: 0px;
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  padding-top: 50px;
+  background-image: url("./Media/Monitor_Zoom.jpg");
+  background-color: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;  
+  color: rgba(25, 192, 39, 0.75);
+  font-family: seegson, monospace;
+}
+  
+/*Header*/
+
+header {
+  position: static;
+  top: 1000px;
+  width: calc(100% - 20px);
+  padding-top: 5px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+  border-bottom: 5px solid rgba(25, 192, 39, 0.75);
+  text-align: center;
+  font-size: 2em;
+  box-shadow: 10px 10px 10px black;
+  text-shadow: 2px 2px 2px black;
+}
+
+ header ul li {
+  display: inline-block;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.uscore {
+  visibility: hidden;
+}
+
+.the {
+  position: relative;
+  top: -50px;
+  left: 50px; 
+}
+
+.corp {
+  position: relative;
+  top: 50px;
+  right: 75px;
+}
+
+.seegson {
+  border: 5px solid rgba(25, 192, 39, 0.75);
+  border-radius: 10px;
+  padding: 5px 15px;
+  rotate: -30deg;
+  transform: skew(-30deg);
+  font-size: 2em;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 10px black;
+}
+
+.container{
+  position: relative;
+  display: inline-block;
+  top: 30px;
+  left: 12px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 10px solid;
+  width: 0;
+  animation: typing 8s steps(30, end) forwards, blinking 1s infinite;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes typing {
+  0% {width: 0px}
+  60% {width: 99%}
+  100% {width: 100%}
+}
+
+@keyframes blinking {
+  0% {border-right-color: transparent}
+  50% {border-right-color: rgba(17, 155, 29, 0.75)}
+  100% {border-right-color: transparent}
+}
+
+/*Body*/
+
+h1 {
+  position: relative;
+  top: 100px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 50px;
+  text-shadow: 2px 2px 2px black;
+
+}
+
+h2 {
+  font-size: 35px;
+  text-shadow: 2px 2px 2px black;
+}
+
+
+h3 {
+  font-size: 30px;
+  font-weight: normal;
+  text-shadow: 2px 2px 2px black;
+}
+
+p {
+  font-size: 25px;
+  margin: 0;
+  text-shadow: 2px 2px 2px black;
+}
+
+/*Colours*/
+
+.colours {
+  position: relative;
+  top: 150px;
+  text-align: center;
+  border: 5px solid rgba(25, 192, 39, 0.75);
+  border-radius: 30px;
+  margin: 0 20px;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px black;
+}
+
+.colours .grey {
+  float: left;
+  clear: both;
+  height: 100px;
+  width: 30%;
+  background-color: rgba(64, 64, 64, 0.75);
+  padding: 0 0 25px 0;
+  margin: 0 0 25px 25px; 
+  border: 5px solid rgba(25, 192, 39, 0.75);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
+  overflow: hidden;
+}
+
+.colours .green {
+  float: right;
+  height: 100px;
+  width: 30%;
+  color: rgba(64, 64, 64, 0.75);
+  background-color: rgba(25, 192, 39, 0.75);
+  padding: 0 0 10px 0;
+  margin: 0px 25px 25px 0px;
+  border: 5px solid rgba(25, 192, 39, 0.75);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
+  overflow: hidden;
+}
+
+.colours .grey p,
+.colours .green p {
+  line-height: 50px;
+}
+
+.cage {
+  position: absolute;
+  line-height: 100px;
+  right: 0px;
+}
+
+.xeno {
+  width: 100px;
+  position: absolute;
+  animation: alien;
+  animation: alien 12s linear infinite running;
+  animation-iteration-count: infinite;
+  z-index: 100;
+}
+
+@keyframes alien {
+  0% {
+  transform: translateX(10vw);
+}
+
+100% {
+  transform: translateX(-100vw);
+}
+}
+
+/*Font*/
+
+.font {
+  position: relative;
+  top: 200px;
+  width: 75%;
+  text-align: center;
+  border: 5px solid rgba(25, 192, 39, 0.75);
+  border-radius: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px black;
+}
+
+.types {
+  padding-bottom: 25px;
+}
+
+/*Text-Styles*/
+.styles {
+  position: relative;
+  top: 250px; 
+  text-align: center;
+  border: 5px solid rgba(25, 192, 39, 0.75);
+  border-radius: 30px;
+  margin: 0 20px;
+  margin-bottom: 500px;
+  padding-top: 20px;
+  box-shadow: 10px 10px 10px black;
+  overflow: hidden;
+}
+
+.styles .h1, .styles .h2, .styles .h3 {
+  display: inline-block;
+  width: 30%;
+  height: 200px; 
+  margin: 0 15px 25px 15px;
+  padding: 5px 10px;
+  text-align: left;
+  border: 5px solid rgba(25, 192, 39, 0.75);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
+  overflow: hidden;
+}
+
+.styles .h1 h1, .styles .h2 h2, .styles .h3 h3 {
+  position: relative;
+  text-align: center;
+  top: 0px;
+
+}
+
+.styles .h1 {
+  display: inline-block;
+  margin: 0 15px 25px 15px;
+  color: rgba(25, 192, 39, 0.75);
+}
+
+.styles .h2 {
+  display: inline-block;
+  margin: 0 15px 25px 15px;
+  color: rgba(25, 192, 39, 0.75);
+}
+
+.styles .h3 {
+  display: inline-block;
+  margin: 0 15px 25px 15px;
+  color: rgba(25, 192, 39, 0.75);
+}
+
+.styles h1, .styles h2, .styles h3 {
+  margin-top: 0;
+}
+
+.styles ul {
+  list-style: none;
+  padding: 0;
+}
+
+.styles li {
+  margin-bottom: 10px;
+}
+
+.cage2 {
+  text-align: left;
+  position: absolute;
+  top: 2vh;
+  left: 0px;
+  z-index: 50;
+}
+
+.xeno2 {
+  width: 100px;
+  position: absolute;
+  top: 1vh;
+
+  left: 0;
+  animation: alien2 12s linear infinite running;
+  animation-iteration-count: infinite;
+  z-index: 50;
+}
+
+@keyframes alien2 {
+  0% {
+    transform: translateX(-10vw);
+  }
+
+  100% {
+    transform: translateX(95vw)
+  }
+}
+
+
+/*My cool, but unusable, screen:
+
+body {
+  box-shadow: -75px -75px 600px 200px rgba(0, 0, 0, 0.75) inset;
+  background-color: rgb(64, 64, 64);
+  border: 10px solid grey;
+  border-radius: 50px;
+}/*
